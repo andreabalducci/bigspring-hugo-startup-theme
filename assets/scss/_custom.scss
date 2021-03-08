@@ -3,9 +3,27 @@
 
 .navigation {
   background-color: $primary-color;
+  .ti-menu {
+    color: white;
+  }
 }
 
-section.bg-light {
+footer {
+  &.section.bg-light {
+    background-color: $primary-color !important;
+  }
+}
+
+.bg-light {
+  color: $text-color-light;
+
+  .feature-card {
+    p,
+    .paragraph {
+      color: $text-color;
+    }
+  }
+
   p,
   .paragraph {
     font-weight: 400;
@@ -16,6 +34,14 @@ section.bg-light {
   }
 
   .btn-link {
+    color: $text-color-light;
+  }
+
+  .h3 {
+    color: $text-color-light;
+  }
+
+  a {
     color: $text-color-light;
   }
 }
