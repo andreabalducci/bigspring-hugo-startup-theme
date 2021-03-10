@@ -6,6 +6,17 @@
   .ti-menu {
     color: white;
   }
+
+  .navbar {
+    a.nav-link {
+      color: white;
+
+      &:hover {
+        color: white;
+        text-decoration: underline;
+      }
+    }
+  }
 }
 
 footer {
