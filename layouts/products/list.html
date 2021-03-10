@@ -19,8 +19,7 @@
         </div>
       </div>
       {{ end }}
-      {{ $paginator := .Paginate .Data.Pages }}
-      {{ range $paginator.Pages }}
+      {{ range .Data.Pages.ByWeight }}
       <div class="col-lg-4 col-sm-6 mb-5">
         <div class="card border-0">
           <img src="{{ .Params.image |relURL }}" alt="{{ .Title }}" class="card-img rounded-lg mb-4">
@@ -32,9 +31,6 @@
         </div>
       </div>
       {{ end }}
-      <div class="col-12">
-        {{ template "_internal/pagination.html" . }}
-      </div>
     </div>
   </div>
 </section>
