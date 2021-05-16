@@ -16,9 +16,9 @@
         text-decoration: underline;
       }
     }
-    ul.navbar-nav{
+    ul.navbar-nav {
       width: 100%;
-      .filler{
+      .filler {
         flex-grow: 1;
       }
     }
@@ -69,4 +69,36 @@ footer {
 
 .banner {
   padding: 30px 0 50px;
+}
+
+.full_page_container {
+  margin-top: -24px;
+  .container {
+    padding: 0px;
+    margin: 0px;
+    max-width: 100%;
+
+    h1 {
+      z-index: 2;
+      position: absolute;
+      color: #fff;
+      margin-left: 2rem;
+      margin-top: 2em;
+      width: 36rem;
+
+      @include mobile {
+        margin-top: 1.2em;
+        margin-left: 0.8rem;
+        font-size: 1.3em;
+        width: 8rem;
+      }
+    }
+
+    img {
+      z-index: 1;
+      position: relative;
+      left: 0;
+      right: 0;
+    }
+  }
 }
